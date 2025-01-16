@@ -1,0 +1,23 @@
+name: Copy files with SCP
+
+on:
+  workflow_dispatch:  
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Copy to Remote Server
+      uses: Pirrhot/scp-action@v0.1.0
+      with:
+        host: ${{ secrets.DESTINATION_HOST }}
+        ssh_port: 22
+        ssh_username: ${{ secrets.SSH_USERNAME }}
+        ssh_key: ${{ secrets.SSH_KEY }}
+        source_dir: "~/hemato/code"
+        destination_dir: "/github/workspace/data"
+        rm: false
