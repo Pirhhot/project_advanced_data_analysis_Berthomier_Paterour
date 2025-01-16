@@ -18,8 +18,8 @@ jobs:
         port: 22
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
-        source : "~/hemato/code"
-        target: "/github/workspace/data"
+        source : "~/hemato/code/"
+        target: "/data/"
         
     - name: Commit and Push Files to Repository
       run: |
