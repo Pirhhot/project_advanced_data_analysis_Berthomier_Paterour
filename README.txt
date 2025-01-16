@@ -39,9 +39,10 @@ project/
 │   ├── datasets.py              # Data loading and preprocessing class of the main data
 │   ├── viz_raw_data.py          # Functions for PCA and UMAP plotting
 │   ├── best_model.py            # Functions for model selection
-│   ├── best_model.py            # Functions for the best model training and testing
+│   ├── model_selection.py            # Functions for the best model training and testing
+│   ├── Project_visualization.ipynb   # Project markdown
 │   └── models.py                # Main script to run the different models (svm, mlp)
-├── Project_visualization.ipynb   # Project markdown
+
 └── README.md                    # Project documentation
 
 
