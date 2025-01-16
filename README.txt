@@ -29,7 +29,7 @@ File Structure
 
 project/
 ├── data/                        # Directory for data files
-│   ├── merged_data_final.csv    # This file is too big to be put on this repository => Get it from Thomas or download the raw_counts from the id_summary.tsv => GDC database.
+│   ├── merged_data_final.csv    # This file is too big to be put on this repository => Get it from Thomas or download the raw_counts from the id_summary.tsv => GDC database and use Data load method.
 │   ├── clinical.tsv             # For preprocessing (merging)
 │   ├── raw_count/               # Raw count data
 │   └── id_summary.tsv           # For preprocessing (merging)
