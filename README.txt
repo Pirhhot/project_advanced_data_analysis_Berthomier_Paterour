@@ -4,7 +4,7 @@ Project: Transcriptome Analysis and classification of Bone Marrow neoplasia
 
 This project is designed to analyze transcriptome data using both supervised and unsupervised learning techniques. It includes data preprocessing steps. The project then visualize the data using unsupervised methods such as PCA and UMAP. The project also incorporates machine learning pipelines for classification tasks (testing logistic regression, SVM and MLP) taking into account the unbalanced structure of the data.
 
-This project provides a pipeline for analyzing transcriptomic datasets:
+- This project provides a pipeline for analyzing transcriptomic datasets:
 
 The implementation includes modular code with reusable classes and methods to ensure easy scalability and maintainability.
 
@@ -17,11 +17,11 @@ Data Loading and Preprocessing:
 
 Automatically loads transcriptomic data and clinical annotations. Filters unknown categories and handles class imbalance with computed weights.
 
-Visualization:
+- Visualization:
 
 Generates PCA plots to explain variance in the dataset. Generates UMAP plots for clustering and dimensionality reduction.
 
-Machine Learning Pipelines:
+- Machine Learning Pipelines:
 
 Prebuilt pipelines for training and testing models (e.g., SVM, MLP). Implements cross-validation and nested cross-validation for model evaluation.
 
@@ -29,7 +29,7 @@ File Structure
 
 project/
 ├── data/                        # Directory for data files
-│   ├── merged_data_final.csv    # This file is too big to be put on this repository => Get it from Thomas or download the raw_counts from the id_summary.tsv => GDC database and use Data load method.
+│   ├── merged_data_final.csv    # This file is too big to be put on this repository 
 │   ├── clinical.tsv             # For preprocessing (merging)
 │   ├── raw_count/               # Raw count data
 │   └── id_summary.tsv           # For preprocessing (merging)
@@ -46,17 +46,20 @@ project/
 └── README.md                    # Project documentation
 
 
-Dependencies
+- Dependencies
 
 The following Python libraries are required:
 
 os pandas numpy matplotlib seaborn scikit-learn umap-learn imblearn json time
 
-Data
+- Data
 
 The project expects two main data files:
 
-merged_data_final.csv: Contains the main dataset with transcriptomic information and the labels. clinical.tsv: Contains clinical annotations with Case ID and diagnosis_category.
+merged_data_final.csv: Contains the main dataset with transcriptomic information and the labels. 
+It is not on the repository => Get it from Thomas or use the id_summary.tsv to retrieve the indices of the GDC database. 
+Go to the GDC database and retrieve the raw counts star pipeline and use the load method from the Data class in datasets.py.
+clinical.tsv: Contains clinical annotations with Case ID and diagnosis_category.
 
 Place these files in the data/ directory.
 
