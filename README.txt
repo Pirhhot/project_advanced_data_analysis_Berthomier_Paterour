@@ -62,4 +62,4 @@ Place these files in the data/ directory.
 
 Requirements
 
-models.py has been launched using 60 CPUs and 256 Go of RAM. Run time with parallelisation :
+models.py has been launched using 60 CPUs and 256 Go of RAM. Run time with parallelisation : around (see /output/timer)
